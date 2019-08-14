@@ -1,0 +1,17 @@
+@define-mixin atSmall {
+	@media (min-width: 530px) { /* if screen larger than 530px, apply these roles */
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (min-width: 800px) { /* if screen larger than 800px, apply these roles */
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (min-width: 1200px) { /* if screen larger than 1200px, apply these roles */
+		@mixin-content;
+	}
+}

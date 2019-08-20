@@ -7,3 +7,11 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+* { /* select any singel element on the page */
+	box-sizing: border-box;
+}
+
+a {
+	color: $mainOrange;
+}

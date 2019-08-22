@@ -893,3 +893,25 @@ a {
 .testimonial--last {
 		margin-bottom: 0px;
 	}
+
+.site-footer {
+	background-color: #2f5572;
+	color: #fff;
+	padding: .5rem 0;
+	text-align: center;
+}
+
+.site-footer__text {
+		display: block;
+		margin-bottom: 1rem;
+		font-weight: 200;
+	}
+
+@media (min-width: 800px) {
+
+.site-footer__text { /* if screen larger than 800px, apply these roles */
+			display: inline;
+			margin-bottom: 0;
+			margin-right: 1.4rem
+	}
+	}

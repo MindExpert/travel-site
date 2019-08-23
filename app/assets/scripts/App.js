@@ -1,13 +1,15 @@
-function Person(fullName, favColor) {
-	this.name = fullName;
-	this.color = favColor;
-	this.greet = function() {
-		console.log("Hello There, My name is " + this.name + " and my favorite color i " + this.color + ".");
-	}
-}
+var Person = require('./modules/Person'); // Whenu use require, you dont need to use .js
+var $ = require('jquery');
 
-var john = new Person("John Doe", "Blue");
-john.greet();
 
-var elsa = new Person("Jahne Parkins", "Red");
-elsa.greet(); 
+var john = new Person("John Doe", "blue");
+	john.greet();
+var jane = new Person("Jane Smith", "green");
+	jane.greet();
+
+$("h1").remove();
+
+
+/* WebPack Testing */ 
+// console.log(Person.exampleProperty);
+// Person.exampleFunction();

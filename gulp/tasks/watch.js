@@ -19,9 +19,13 @@ gulp.task('watch', function() {
 
 	watch('./app/assets/styles/**/*.css', function() {
 		gulp.start('cssInject');
+	});
+
+	watch('./app/assets/scripts/**/*.js', function () {
+		gulp.start('scriptsRefresh');
 	})
 
-});
+}); 
 
 /* GULP CSS Auto Inject  TASK */
 /* 	Before we run cssInject, we run any dependencies (which is the second argument). 
@@ -33,4 +37,8 @@ gulp.task('watch', function() {
 gulp.task('cssInject',['styles'] ,function(){
 	return gulp.src('./app/temp/styles/styles.css')
 	.pipe(browserSync.stream());
+});
+
+gulp.task('scriptsRefresh',['scripts'] ,function(){
+	browserSync.reload();
 });

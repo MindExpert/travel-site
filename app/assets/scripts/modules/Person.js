@@ -1,12 +1,27 @@
-function Person(fullName, favColor) {
-	this.name = fullName;
-	this.color = favColor;
-	this.greet = function() {
-		console.log("Hello There, My name is " + this.name + " and my favorite color i " + this.color + ".");
+class Person {
+	constructor(fullName, favColor){
+		this.name = fullName;
+		this.color = favColor;
+	}
+	greet() {
+		console.log("Hi There, My name is " + this.name + " and my favorite color i " + this.color + ".");
 	}
 }
-module.exports = Person;
+export default Person;
 
+
+
+
+
+
+// function Person(fullName, favColor) {
+// 	this.name = fullName;
+// 	this.color = favColor;
+// 	this.greet = function() { //method
+// 		console.log("Hello There, My name is " + this.name + " and my favorite color i " + this.color + ".");
+// 	}
+// }
+// module.exports = Person;
 
 /* WebPack Testing*/
 // console.log("Baby Boy");

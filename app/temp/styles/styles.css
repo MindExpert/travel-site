@@ -929,9 +929,6 @@ a {
 	position: absolute;
 	width: 100%;
 	z-index: 2;
-
-
-
 }
 
 /* background-color: rgba($mainBlue, .3); */
@@ -940,9 +937,6 @@ a {
 
 .site-header { /* if screen larger than 800px, apply these roles */
 		background-color: rgba(47, 85, 114, .3)
-
-
-
 }
 	}
 
@@ -1001,6 +995,10 @@ a {
 			display: block
 	}
 	}
+
+.site-header__menu-content--is-visible {
+			display: block;
+		}
 
 .primary-nav--pull-right {
 		float: right;

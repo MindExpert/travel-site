@@ -940,9 +940,14 @@ a {
 @media (min-width: 800px) {
 
 .site-header { /* if screen larger than 800px, apply these roles */
+		position: fixed;
 		background-color: rgba(47, 85, 114, .3);
-		padding: 10px 0
+		padding: 5px 0
 }
+
+		.site-header--dark {
+			background-color: rgba(23, 51, 72, .85);
+		}
 	}
 
 @media (min-width: 800px) {
@@ -962,6 +967,7 @@ a {
 		transform-origin: 50% 0%; 
 		background-color: #2f5572;
 		padding: 15px 30px;
+		transition: transform .3s ease-out;
 	}
 
 /*	width: 160px;
@@ -977,6 +983,9 @@ a {
 			/*width: auto;
 			height: auto;*/
 	}
+			.site-header--dark .site-header__logo { /* Will select the LOGO only when the dark selecter is being used*/
+				transform: scale(.53);
+			}
 	}
 
 .site-header__menu-icon {
@@ -1106,13 +1115,13 @@ a {
 	}
 	}
 
-.primary-nav li:last-child {
+.primary-nav li::last-child {
 		padding-right: 0;
 	}
 
 @media (min-width: 800px) {
 
-.primary-nav li:last-child { /* if screen larger than 800px, apply these roles */
+.primary-nav li::last-child { /* if screen larger than 800px, apply these roles */
 			padding-right: 20
 	}
 	}
@@ -1135,6 +1144,10 @@ a {
 			padding-bottom: 0;
 			background-color: transparent
 	}
+
+			.primary-nav a.is-current-link { /* If it only has an is-current-link class */
+				color: #fabb69;
+			}
 	}
 
 .reveal-item {

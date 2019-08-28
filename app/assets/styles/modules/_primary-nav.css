@@ -26,7 +26,7 @@
 		}
 	}
 
-	li:last-child {
+	li::last-child {
 		padding-right: 0;
 		@mixin atMedium {
 			padding-right: 20;
@@ -47,6 +47,10 @@
 			padding-top: 0;
 			padding-bottom: 0;
 			background-color: transparent;
+
+			&.is-current-link { /* If it only has an is-current-link class */
+				color: #fabb69;
+			}
 		}
 	}
 }

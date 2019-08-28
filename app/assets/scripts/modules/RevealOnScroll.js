@@ -23,7 +23,7 @@ class RevealOnScroll {
 				handler: function() {
 					$(currentItem).addClass("reveal-item--is-visible");
 				}, //what we want to happen, when that element is scrolled to.
-				offset:that.offsetPercentage
+				offset: that.offsetPercentage
 			});
 		});
 	}

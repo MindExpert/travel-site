@@ -4,7 +4,7 @@
   "description": "A travel site, Built with most advanced Web Technologies",
   "main": "gulpfile.js",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^5.1.1",
     "normalize.css": "^8.0.1",
